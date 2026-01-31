@@ -110,8 +110,14 @@ cd my-source-repo.git
 
 ### Step 3: Push to CodeCommit
 Push the entire mirrored content to the new CodeCommit repository.
+
+**Using Standard HTTPS:**
 ```bash
-# Using HTTPS (GRC helper recommended)
+git push --mirror https://git-codecommit.us-east-1.amazonaws.com/v1/repos/MyMigratedRepo
+```
+
+**Using GRC (If helper is installed):**
+```bash
 git push codecommit://MyMigratedRepo --mirror
 ```
 > [!NOTE]
